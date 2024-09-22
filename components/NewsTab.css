@@ -1,0 +1,23 @@
+.tab-menu {
+  position: fixed;
+  top: 1;
+  left: 0;
+  width: 250px;
+  height: 83%;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add shadow effect */
+}
+
+/* Mobile responsiveness using media queries */
+@media screen and (300px <= width <= 900px) {
+  .tab-menu {
+    width: 100%; /* Adjust width for smaller screens */
+    height: auto; /* Allow height to adjust according to content */
+    max-height: 80vh; /* Set maximum height to 80% of viewport height */
+    overflow-y: auto; /* Add scroll if content exceeds the height */
+    box-shadow: none; /* Remove shadow effect on smaller screens */
+    position: relative; /* Reset position for smaller screens */
+    top: auto;
+    left: auto;
+  }
+}
